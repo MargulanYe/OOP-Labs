@@ -1,13 +1,12 @@
 import java.util.Scanner;
 
-public class Problem3 { // Имя класса совпадает с файлом
+public class Main { //
 
 	public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("What is your mark?");
-		// Используем nextDouble, так как переменная num типа double
 		double num = scanner.nextDouble(); 
 		
 		if (num < 50) {
