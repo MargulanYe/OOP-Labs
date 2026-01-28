@@ -9,7 +9,7 @@ public class Main { //
 		System.out.println("What is your mark?");
 		double num = scanner.nextDouble(); 
 		
-		if (num < 50) {
+		if (num < 49.5) {
 			System.out.println("F");
 		} else if(num >= 49.5 && num < 54.5) {
 			System.out.println("D");
