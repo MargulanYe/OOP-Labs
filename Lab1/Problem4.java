@@ -1,22 +1,28 @@
 import java.util.Scanner;
 
-public class Main {
+public class Problem4 {
 
-	public static void main(String[] args) {
-		
-		//D = b^2 - 4ac
-		
-		Scanner scanner = new Scanner(System.in);
-		int a = scanner.nextInt();
-		int b = scanner.nextInt();
-		int c = scanner.nextInt();
-		
-		int D = b * b - 4 * a * c;
-		
-		if(D < 0) {
-			System.out.println("Error");
-		} else System.out.println(D);
-		
-	}
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Enter a, b, c:");
+        
+        double a = scanner.nextDouble();
+        double b = scanner.nextDouble();
+        double c = scanner.nextDouble();
+
+        double D = b * b - 4 * a * c;
+
+        if (D < 0) {
+            System.out.println("Error: Discriminant is negative");
+        } else {
+            double sqrtD = Math.sqrt(D);
+
+            double x1 = (-b + sqrtD) / (2 * a);
+            double x2 = (-b - sqrtD) / (2 * a);
+
+            System.out.println("Root 1: " + x1);
+            System.out.println("Root 2: " + x2);
+        }
+    }
 }
